@@ -15,17 +15,19 @@ public class Main{
     System.out.println(a.moveCandyToFirstRow(0));
     System.out.println(a.moveCandyToFirstRow(1));
     System.out.println(a.moveCandyToFirstRow(2));
+
+    System.out.println();
     
     for(int x=0; x<cube.length; x++)
     {
         for(int y=0; y<cube[0].length; y++)
         {
-            if(cube[x][y] != null)System.out.print("");
-            else System.out.print( "");
+            if(cube[x][y] != null)System.out.print(" " +cube[x][y].getFlavor());
+            else System.out.print( "blank");
         }
         System.out.println();
 }
-        
+System.out.println();
 
 
     Candy[][] candies2 = new Candy[3][5];
@@ -58,6 +60,8 @@ b.removeNextByFlavor("cherry");
 b.removeNextByFlavor("lime");
 
    
+System.out.println();
+
 for(int x=0; x<candies2.length; x++)
     {
         for(int y=0; y<candies2[0].length; y++)
